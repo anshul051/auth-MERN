@@ -1,0 +1,15 @@
+# dependencies
+**/node_modules
+
+# environment variables
+**/.env
+
+# builds
+**/dist
+**/build
+
+# IDE / System
+.idea
+.vscode
+.DS_Store
+*.iml
