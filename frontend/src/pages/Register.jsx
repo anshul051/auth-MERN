@@ -21,7 +21,7 @@ export default function Register({ setUser }) {
     e.preventDefault();
 
     try {
-      const res = await axios.post("/api/users/register", formData);
+      const res = await axios.post("https://auth-mern-backend-2rh6.onrender.com/api/users/register", formData);
       localStorage.setItem("token", res.data.token);
       setUser(res.data);
       navigate("/");

@@ -20,7 +20,7 @@ export default function Login({ setUser }) {
     e.preventDefault();
 
     try {
-      const res = await axios.post("/api/users/login", formData);
+      const res = await axios.post("https://auth-mern-backend-2rh6.onrender.com/api/users/login", formData);
       localStorage.setItem("token", res.data.token);
       setUser(res.data);
       navigate("/");

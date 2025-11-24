@@ -22,7 +22,7 @@ const App = () => {
       const token = localStorage.getItem("token");
       if (token) {
         try {
-          const res = await axios.get("/api/users/me", {
+          const res = await axios.get("https://auth-mern-backend-2rh6.onrender.com/api/users/me", {
             headers: { Authorization: `Bearer ${token}` },
           });
           setUser(res.data);
